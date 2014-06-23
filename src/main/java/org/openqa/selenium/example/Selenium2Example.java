@@ -15,12 +15,13 @@ public class Selenium2Example {
     WebDriver driver = new FirefoxDriver();
 
     // And now use this to visit Google
-    driver.get("http://www.google.com");
+    driver.get("http://www.bing.com");
     // Alternatively the same thing can be done like this
     // driver.navigate().to("http://www.google.com");
 
     // Find the text input element by its name
     WebElement element = driver.findElement(By.name("q"));
+
 
     // Enter something to search for
     element.sendKeys("Cheese!");
